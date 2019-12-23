@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".options">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="2"
+        android:columnCount="1"
+        android:orientation="vertical"
+        android:padding="50dp"
+        >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/consumerrights"
+            android:padding="50dp">
+        <ImageView
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:padding="5dp"
+               android:outlineAmbientShadowColor="@android:color/background_dark"
+               android:src="@drawable/consumer_rights_970x500"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:text="energy consumption"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/energy_consumption"
+            android:padding="50dp">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:padding="5dp"
+                android:outlineAmbientShadowColor="@android:color/background_dark"
+                android:src="@drawable/energy"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:text="energy consumption"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/O_M"
+            android:padding="50dp">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:padding="16dp"
+                android:outlineAmbientShadowColor="@android:color/background_dark"
+                android:src="@drawable/icon_operations_and_maintenance_150x150"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:text="energy consumption"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Smart_grid"
+            android:padding="50dp">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:padding="16dp"
+                android:outlineAmbientShadowColor="@android:color/background_dark"
+                android:src="@drawable/smart_grid_diagram"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:text="energy consumption"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                />
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+    </FrameLayout>

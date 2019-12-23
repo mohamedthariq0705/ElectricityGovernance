@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".energy_cons">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENERGY CONSUMPTION"
+        android:textStyle="italic"
+        android:textSize="25dp"
+        android:gravity="center"/>
+        <RadioGroup
+            android:id="@+id/radgroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/domestic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Domestic"/>
+        <RadioButton
+            android:id="@+id/commercial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Commercial"/>
+        </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last month reading"/>
+    <EditText
+        android:id="@+id/LMR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current month reading"/>
+        <EditText
+            android:id="@+id/CMR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            />
+        <Button
+            android:id="@+id/calc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="calculate"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="total amount:"/>
+        <TextView
+            android:id="@+id/ammountview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
